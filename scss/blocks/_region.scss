@@ -51,9 +51,9 @@
     position: absolute;
     right: 0;
     @include sm{
-      display: block;
       width: 327px;
       margin-top: 5px;
+      position: relative;
     }
   }
   &__bg-image{
