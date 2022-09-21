@@ -53,7 +53,7 @@
     @include sm{
       width: 327px;
       margin-top: 5px;
-      position: relative;
+      position: initial;
     }
   }
   &__bg-image{
