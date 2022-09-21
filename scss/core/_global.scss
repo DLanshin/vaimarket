@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100%;
+  background: #FFFFFF;
+  font-size: 14px;
+  color: $font_color_primary;
+  font-family: 'Roboto Flex', sans-serif;
+  overflow-x: hidden;
+  @include sm{
+    font-size: $regular_font_size;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding-top: 54px;
+  @include sm{
+    padding-top: 0;
+  }
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+a, button{
+  cursor: pointer;
+  text-decoration: none;
+}
+.hide{
+  opacity: 0;
+}
+.hidden{
+  display: none;
+}
+

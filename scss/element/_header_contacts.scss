@@ -1,0 +1,19 @@
+.contacts {
+  &__phone {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  &__phone-icon {
+    margin-right: 5px;
+    width: 28px;
+    height: 28px;
+  }
+
+  &__phone-text {
+
+  }
+}

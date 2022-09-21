@@ -1,0 +1,46 @@
+//Необходимые переменные
+@import 'variables/variables';
+//Сброс стандартных css
+@import 'core/reset';
+//Кастомизация стилей библиотек
+@import 'core/libs';
+@import "mixins/mixins-master";
+//Глобальные стили
+@import 'core/global';
+
+@import "main";
+//Элементы
+@import "element/elements";
+//Блоки
+@import "blocks/blocks";
+//Медиа
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}

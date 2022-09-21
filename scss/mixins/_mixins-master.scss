@@ -1,0 +1,372 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+
+
+@mixin zero_xs {
+	@media (min-width: 0px) and (max-width: #{$screen-xs - .02px}) {
+		@content;
+	}
+}
+
+@mixin custom_zero_xs {
+	@media (min-width: 0px) and (max-width: #{$screen-custom-lg - .02px}) {
+		@content;
+	}
+}
+
+@mixin zero_sm {
+	@media (min-width: 0px) and (max-width: #{$screen-sm - .02px}) {
+		@content;
+	}
+}
+
+@mixin zero_md {
+	@media (min-width: 0px) and (max-width: #{$screen-md - .02px}) {
+		@content;
+	}
+}
+
+@mixin zero_lg {
+	@media (min-width: 0px) and (max-width: #{$screen-lg - .02px}) {
+		@content;
+	}
+}
+
+@mixin zero_xl {
+	@media (min-width: 0px) and (max-width: #{$screen-lg - .02px}) {
+		@content;
+	}
+}
+
+
+@mixin xs_sm {
+	@media (min-width: #{$screen-xs}) and (max-width: #{$screen-sm - .02px}) {
+		@content;
+	}
+}
+
+@mixin sm_md {
+	@media (min-width: #{$screen-sm}) and (max-width: #{$screen-md - .02px}) {
+		@content;
+	}
+}
+
+@mixin md_lg {
+	@media (min-width: #{$screen-md}) and (max-width: #{$screen-lg - .02px}) {
+		@content;
+	}
+}
+
+@mixin lg_xl {
+	@media (min-width: #{$screen-lg}) and (max-width: #{$screen-xl - .02px}) {
+		@content;
+	}
+}
+
+@mixin sm_lg {
+	@media (min-width: #{$screen-sm}) and (max-width: #{$screen-lg - .02px}) {
+		@content;
+	}
+}
+
+
+// Extra small devices
+// 375px
+@mixin xs {
+	@media (min-width: #{$screen-xs - .02px}) {
+		@content;
+	}
+}
+
+// Custom extra small devices
+// 425px
+
+@mixin xs {
+	@media (min-width: #{$custom-screen-xs - .02px}) {
+		@content;
+	}
+}
+
+// Small devices
+// 768px
+@mixin sm {
+	@media (min-width: #{$screen-sm - .02px}) {
+		@content;
+	}
+}
+
+// Medium devices
+// 1024px
+@mixin md {
+	@media (min-width: #{$screen-md  - .02px}) {
+		@content;
+	}
+}
+
+@mixin custom-lg {
+	@media (min-width: #{$screen-custom-lg}) {
+		@content
+	}
+}
+
+// Large devices
+// 1366px
+@mixin lg {
+	@media (min-width: #{$screen-lg - .02px}) {
+		@content;
+	}
+}
+
+// Extra large devices
+// 1440px
+@mixin xl {
+	@media (min-width: #{$screen-xl - .02px}) {
+		@content;
+	}
+}
+
+// @mixin blog_container_xs {
+// 	@include xs {
+// 		max-width: $content-xs;
+// 	}
+// }
+
+// @mixin blog_container_sm {
+// 	@include sm {
+// 		max-width: $content-sm;
+// 	}
+// }
+
+// @mixin blog_container_md {
+// 	@include md {
+// 		max-width: $content-md;
+// 	}
+// }
+
+// @mixin blog_container_lg {
+// 	@include lg {
+// 		max-width: $content-lg;
+// 	}
+// }
+
+// @mixin blog_container_xl {
+// 	@include xl {
+// 		max-width: $content-xl;
+// 	}
+// }
+
+@mixin container_gen($container_map) {
+	$last_size: -1px;
+
+	@each $width,
+	$size in $container_map {
+
+		@if $width==$screen-xs {
+			max-width: $size;
+		}
+
+		@else {
+			@if $last_size !=$size {
+
+				@media (min-width: $width) {
+					max-width: $size;
+				}
+			}
+		}
+
+		$last_size: $size;
+	}
+}
+
+// @mixin blog_content_container {
+// 	@include container_gen($content_container_map);
+// }
+
+
+@mixin offset_gen($offset_size, $offset_type) {
+	$last_margin: -1px;
+
+	@each $width,
+	$margin in $offset_size {
+
+		@if $width==$screen-xs {
+			#{$offset_type}: $margin;
+		}
+
+		@else {
+			@if $last_margin !=$margin {
+
+				@media (min-width: $width) {
+					#{$offset_type}: $margin;
+				}
+			}
+		}
+
+		$last_margin: $margin;
+	}
+}
+
+// Розовый
+@mixin offset_1($offset_type) {
+	@include offset_gen($level_1_offset, $offset_type);
+}
+
+// Фиолетовый
+@mixin offset_2($offset_type) {
+	@include offset_gen($level_2_offset, $offset_type);
+}
+
+// Голубой
+@mixin offset_3($offset_type) {
+	@include offset_gen($level_3_offset, $offset_type);
+}
+
+// Зеленый
+@mixin offset_4($offset_type) {
+	@include offset_gen($level_4_offset, $offset_type);
+}
+
+// Желтый
+@mixin offset_5($offset_type) {
+	@include offset_gen($level_5_offset, $offset_type);
+}
+
+// Оранжевый
+@mixin offset_6($offset_type) {
+	@include offset_gen($level_5_offset, $offset_type);
+}
+
+
+@mixin active_state($active_class: ".active") {
+
+	&#{$active_class},
+	&:hover,
+	&:focus {
+		@content;
+	}
+}
+
+
+@mixin placeholder() {
+
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	&::placeholder {
+		@content;
+	}
+
+	/* Internet Explorer 10-11 */
+	&:-ms-input-placeholder {
+		@content;
+	}
+
+	/* Microsoft Edge */
+	&::-ms-input-placeholder {
+		@content;
+	}
+}
+
+@mixin font_size_gen($font_size) {
+	$last_size: -1px;
+
+	@each $width,
+	$size in $font_size {
+
+		@if $width==$screen-xs {
+			font-size: $size;
+		}
+
+		@else {
+			@if $last_size !=$size {
+
+				@media (min-width: $width) {
+					font-size: $size;
+				}
+			}
+		}
+
+		$last_size: $size;
+	}
+}
+
+// 36px
+@mixin font_size_h1() {
+	@include font_size_gen($headings_level_1_font_size);
+}
+
+// 30px
+@mixin font_size_h2() {
+	@include font_size_gen($headings_level_2_font_size);
+}
+
+// 24px
+@mixin font_size_h3() {
+	@include font_size_gen($headings_level_3_font_size);
+}
+
+// 18px
+@mixin font_size_h4() {
+	@include font_size_gen($headings_level_4_font_size);
+}
+
+// 16px
+@mixin font_size_h5() {
+	@include font_size_gen($headings_level_5_font_size);
+}
+
+// 16px
+@mixin font_size_h6() {
+	@include font_size_gen($headings_level_6_font_size);
+}
+
+// 24px
+@mixin font_size_text_1() {
+	@include font_size_gen($text_level_1_font_size);
+}
+
+// 18px
+@mixin font_size_text_2() {
+	@include font_size_gen($text_level_2_font_size);
+}
+
+// 16px
+@mixin font_size_text_3() {
+	@include font_size_gen($text_level_3_font_size);
+}
+
+// 14px
+@mixin font_size_text_4() {
+	@include font_size_gen($text_level_4_font_size);
+}
+
+// 12px
+@mixin font_size_text_5() {
+	@include font_size_gen($text_level_5_font_size);
+}
+
+// 12px
+@mixin font_size_text_6() {
+	@include font_size_gen($text_level_6_font_size);
+}

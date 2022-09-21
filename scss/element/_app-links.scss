@@ -1,0 +1,16 @@
+.app-links{
+  padding-bottom: 25px;
+
+  &__items{
+    display: flex;
+  }
+  &__item{
+    margin-right: 10px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__item img{
+    width: 125px;
+  }
+}

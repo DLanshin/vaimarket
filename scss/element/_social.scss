@@ -1,0 +1,15 @@
+.social{
+  margin: 5px;
+  &__items{
+    display: flex;
+  }
+  &__item{
+    margin-right: 20px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__item img{
+    border-radius: 50%;
+  }
+}

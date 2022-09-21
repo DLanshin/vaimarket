@@ -1,0 +1,17 @@
+.nav {
+
+  &__items {
+    padding: 13px 0;
+    display: flex;
+  }
+
+  &__item {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-right: 28px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}

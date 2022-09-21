@@ -1,0 +1,32 @@
+.breadcrumbs {
+  margin-bottom: 10px;
+  &__items{
+    display: flex;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    &:after{
+      width: 8px;
+      height: 1px;
+      display: block;
+      content: '';
+      background-color: $font_color_secondary;
+      margin-right: 8px;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    &:last-child:after{
+      content: none;
+    }
+  }
+  &__item a{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: $font_color_secondary;
+    margin-right: 9px;
+  }
+}

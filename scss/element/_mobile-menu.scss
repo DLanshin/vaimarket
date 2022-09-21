@@ -1,0 +1,130 @@
+.mobile-menu{
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  z-index: 9999;
+  transition: left 0.2s ease-in;
+  &.open{
+    left: 0;
+  }
+  &__container{
+    padding: 0 25px 0 20px;
+  }
+  &__footer{
+    margin-top: 20px;
+  }
+  &__header-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252725;
+    display: block;
+  }
+
+  &__close{
+    position: absolute;
+    right: 25px;
+    top: 15px;
+  }
+  &__close img{}
+
+  &__wrapper{}
+
+  &__title{
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252725;
+    margin-bottom: 15px;
+  }
+
+  &__items{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  &__submenu{
+    width: 100%;
+    background-color: #ffffff;
+    top: 0;
+    left: 100%;
+    position: absolute;
+    transition: left 0.2s ease-in;
+    height: 100vh;
+  }
+  &__submenu.open{
+    left:0;
+  }
+  &__submenu-header{
+    padding: 10px 0;
+    background: #F7F7F7;
+    margin-bottom: 12px;
+    & .mobile-menu__container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__submenu-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #252725;
+  }
+  &__submenu__close{}
+
+  &__item{
+    width: 100%;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+
+  &__item a{
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: $font_color_primary;
+    justify-content: space-between;
+  }
+  &__item-icon{
+    background-image: url("/assets/icons/arrow-menu.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 7px;
+    height: 14px;
+    display: none;
+
+  }
+  &__item.has-submenu > a > .mobile-menu__item-icon{
+    display: block;
+  }
+  &__button{
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+}
+.mobile-menu hr{
+  border: none;
+  border-bottom: 1px solid #dadfe7;
+  margin: 10px 0;
+}
+

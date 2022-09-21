@@ -1,0 +1,131 @@
+.region-section {
+  margin-bottom: 100px;
+  @include sm{
+    margin-bottom: 200px;
+  }
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 25px 0px 20px;
+    border: 1px solid #CED2DA;
+    border-radius: 20px;
+    @include sm{
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 45px 80px 8px 80px;
+    }
+    @include md{
+      padding: 45px 170px 8px 80px;
+    }
+  }
+  &__content {
+    position: relative;
+    width: 100%;
+    @include sm{
+      width: calc(100% - 327px - 40px);
+    }
+    @include md{
+      width: calc(100% - 327px - 90px);
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 25px;
+    margin-right: 17px;
+
+    font-style: normal;
+    font-weight: 700;
+    @include sm{
+      font-size: $h2_size;
+      line-height: 36px;
+      margin: 0;
+    }
+  }
+
+  &__bg {
+    display: block;
+    width: 195px;
+    position: absolute;
+    right: 0;
+    @include sm{
+      display: block;
+      width: 327px;
+      margin-top: 5px;
+    }
+  }
+  &__bg-image{
+    width: 100%;
+    svg{
+      width: 100%;
+    }
+  }
+
+}
+
+.regions {
+  position: relative;
+  margin: 40px 21px 0px 21px;
+  @include sm{
+    margin: 80px 0;
+  }
+  &__items {
+    width: 160px;
+    height: 405px;
+    overflow-y: hidden;
+    transition: all 0.5s ease-in;
+    @include xs{
+      overflow-y: initial;
+      width: 300px;
+      column-count: 2;
+    }
+    @include sm{
+      overflow-y: initial;
+      width: initial;
+      column-count: 2;
+      height: 480px;
+    }
+    @include md{
+      column-count: 3;
+      height: 340px;
+
+    }
+  }
+  &__items.open{
+    height: auto;
+  }
+
+  &__item {
+    margin-bottom: 12px;
+  }
+  &__item a{
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: $font_color_primary;
+    display: flex;
+    align-items: center;
+    @include sm{
+      font-size: 16px;
+      line-height: 22px;
+    }
+    &:before{
+      content: '';
+      width: 16px;
+      height: 16px;
+      margin-right: 6px;
+      display: block;
+      background-image: url("/assets/icons/map_marker_icon.svg");
+    }
+  }
+  &__toggle-button{
+    margin: 20px 20px 0;
+    width: calc(100% - 40px);
+    z-index: 50;
+    @include sm{
+      display: none;
+    }
+  }
+}
