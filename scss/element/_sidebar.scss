@@ -1,0 +1,19 @@
+.content-with-sidebar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 55px 0;
+}
+.content-with-sidebar .sidebar{
+  display: none;
+  @include md {
+    display: block;
+    width: 280px;
+  }
+}
+.content-with-sidebar .content{
+  width: 100%;
+  @include md{
+    width: calc(100% - 280 - 50px);
+  }
+}

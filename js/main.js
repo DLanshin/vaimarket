@@ -14,56 +14,60 @@ $(document).ready(function () {
 });
 
 function init() {
-    renderShopSlider();
+    initShopSlider();
     initMobileMenu();
     initHeaderSearch();
+    initProductSlider();
     $(window).resize(function () {
-        renderShopSlider();
+        initShopSlider();
+        initProductSlider(true);
     })
 }
 
-function initHeaderSearch(){
+function initHeaderSearch() {
     let $searchBlock = $(".search");
     $(document).on("click", ".js-open-search", function () {
         $("#mobile-search").toggleClass("open");
     });
-    $searchBlock.find("input[type='text']").on("keyup change", function(){
-       if($(this).val().length){
-           $searchBlock.find(".search__clear-button").removeClass("hide");
-       }else{
-           $searchBlock.find(".search__clear-button").addClass("hide");
-       }
+    $searchBlock.find("input[type='text']").on("keyup change", function () {
+        if ($(this).val().length) {
+            $searchBlock.find(".search__clear-button").removeClass("hide");
+        } else {
+            $searchBlock.find(".search__clear-button").addClass("hide");
+        }
     });
-    $searchBlock.find(".search__clear-button").on("click", function (){
+    $searchBlock.find(".search__clear-button").on("click", function () {
         $searchBlock.find("input[type='text']").val("").trigger("change");
     });
 }
 
-function initMobileMenu(){
+function initMobileMenu() {
     let $mobileMenu = $(".mobile-menu");
-    $mobileMenu.on("click", ".js-close-mobile-menu", function(){
+    $mobileMenu.on("click", ".js-close-mobile-menu", function () {
         console.log("close");
     })
-    $mobileMenu.on("click", ".mobile-menu__item > a", function(e){
+    $mobileMenu.on("click", ".mobile-menu__item > a", function (e) {
         let $this = $(this)
         let $parent = $this.parent();
-        if($parent.hasClass("has-submenu")){
+        if ($parent.hasClass("has-submenu")) {
             e.preventDefault();
             let id = $parent.data("id");
-            $parent.find("[data-parent-id="+id+"] .mobile-menu__submenu-title").text($this.text());
-            $parent.find("[data-parent-id="+id+"]").addClass("open");
+            $parent.find("[data-parent-id=" + id + "] .mobile-menu__submenu-title").text($this.text());
+            $parent.find("[data-parent-id=" + id + "]").addClass("open");
         }
     })
-    $mobileMenu.on("click", ".js-close-submenu", function(){
+    $mobileMenu.on("click", ".js-close-submenu", function () {
         let $this = $(this);
         $this.closest(".mobile-menu__submenu").removeClass("open");
         $this.closest(".mobile-menu__submenu").find(".mobile-menu__submenu-title").empty();
     });
-    $(document).on("click",".js-toggle-menu, .js-close-mobile-menu", function(){
+    $(document).on("click", ".js-toggle-menu, .js-close-mobile-menu", function () {
         $("#mobile-menu").toggleClass("open");
     })
 }
-function renderShopSlider() {
+
+/*SHOPS PAGE*/
+function initShopSlider() {
     var $wrapper = $('#shops-slider');
     if (window.innerWidth < 768) {
         if (!$wrapper.find(".shops__slide").length) {
@@ -104,4 +108,50 @@ function renderShopSlider() {
     }
 
 
+}
+
+/*SHOW PAGE*/
+function initProductSlider(isResized = false) {
+    let $slider = $(".js-product-slider");
+    if (window.innerWidth < 768) {
+        if (isResized) $slider.slick('unslick');
+        $slider.find('.product-slider__item').each(function (index, item) {
+            if(index > 3){
+                $(item).addClass("hidden");
+            }
+        });
+        $slider.css("opacity", 1);
+    }else {
+        $slider.find('.product-slider__item.hidden').removeClass("hidden");
+        $slider.slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: false,
+            lazyLoad: "progressive",
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1180,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+            ]
+        });
+        $slider.css("opacity", 1);
+    }
+
+    $(".js-show-more-products").on("click", function(){
+        console.log("open");
+        $slider.find('.product-slider__item.hidden').each(function (index, item) {
+            if(index < 4){
+                $(item).removeClass("hidden");
+            }
+        });
+    });
 }

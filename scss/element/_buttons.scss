@@ -4,15 +4,35 @@
   font-size: 14px;
   line-height: 20px;
   border-radius: 33px;
-  padding: 10px 20px;
+  padding: 8.5px 20px;
   color: $font_color_primary;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease-in;
+  @include sm{
+    padding: 10px 20px;
+    font-size: 16px;
+  }
   img{
     margin-right: 5px;
   }
+
+  &__icon{
+    width: 11px;
+    height: 13px;
+    img{
+      object-position: center;
+      object-fit: contain;;
+    }
+    &--left{
+      margin-right: 5px;
+    }
+    &--right{
+      margin-left: 5px;
+    }
+  }
+
 }
 .button--default{
   background-color: white;
@@ -23,7 +43,15 @@
   color: #ffffff;
   background-color: $primary_color;
   border:1px solid $primary_color;
-
+}
+.button--primary{
+  color: #ffffff;
+  background-color: $primary_color;
+  border:1px solid $primary_color;
+  &:hover{
+    background-color: transparent;
+    color: $primary_color;
+  }
 }
 .button--block{
   width: 100%;

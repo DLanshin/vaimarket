@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+
+
+</head>
+
+<body>
+<div class="wrapper">
+    <section class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__container">
+            <div class="mobile-menu__close js-close-mobile-menu">
+                <img src="assets/icons/close.svg">
+            </div>
+        </div>
+        <div class="mobile-menu__wrapper">
+            <div class="mobile-menu__container">
+                <div class="mobile-menu__title">
+                    Магазины
+                </div>
+                <ul class="mobile-menu__items">
+                    <li class="mobile-menu__item has-submenu" data-id="1">
+                        <a href="/">
+                            <span class="mobile-menu__item-text">
+                                Ваймаркет
+                            </span>
+                            <span class="mobile-menu__item-icon"></span>
+                        </a>
+                        <div class="mobile-menu__submenu" data-parent-id="1">
+                            <div class="mobile-menu__submenu-header">
+                                <div class="mobile-menu__container">
+                                    <div class="mobile-menu__submenu-title">
+
+                                    </div>
+                                    <div class="mobile-menu__submenu__close js-close-submenu">
+                                        <img src="assets/icons/close.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-menu__container">
+                                <ul class="mobile-menu__items">
+                                    <li class="mobile-menu__item has-submenu" data-id="2">
+                                        <a href="/">
+                                            <span class="mobile-menu__item-text">
+                                                Под меню 1
+                                            </span>
+                                            <span class="mobile-menu__item-icon"></span>
+                                        </a>
+                                        <div class="mobile-menu__submenu" data-parent-id="2">
+                                            <div class="mobile-menu__submenu-header">
+                                                <div class="mobile-menu__container">
+                                                    <div class="mobile-menu__submenu-title">
+
+                                                    </div>
+                                                    <div class="mobile-menu__submenu__close js-close-submenu">
+                                                        <img src="assets/icons/close.svg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mobile-menu__container">
+                                                <ul class="mobile-menu__items">
+                                                    <li class="mobile-menu__item" data-id="3">
+                                                        <a href="/">
+                                                            <span class="mobile-menu__item-text">
+                                                                Под под меню 1
+                                                            </span>
+                                                            <span class="mobile-menu__item-icon"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mobile-menu__item " data-id="12">
+                        <a href="/">
+                            <span class="mobile-menu__item-text">
+                                Ингфермер
+                            </span>
+                            <span class="mobile-menu__item-icon"></span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item has-submenu" data-id="22">
+                        <a href="/">
+                            <span class="mobile-menu__item-text">
+                                Гипермаркет
+                            </span>
+                            <span class="mobile-menu__item-icon"></span>
+                        </a>
+                        <div class="mobile-menu__submenu" data-parent-id="22">
+                            <div class="mobile-menu__submenu-header">
+                                <div class="mobile-menu__container">
+                                    <div class="mobile-menu__submenu-title">
+
+                                    </div>
+                                    <div class="mobile-menu__submenu__close js-close-submenu">
+                                        <img src="assets/icons/close.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-menu__container">
+                                <ul class="mobile-menu__items">
+                                    <li class="mobile-menu__item" data-id="5">
+                                        <a href="/">
+                                            <span class="mobile-menu__item-text">
+                                                Под меню 1
+                                            </span>
+                                            <span class="mobile-menu__item-icon"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mobile-menu__item has-submenu" data-id="32">
+                        <a href="/">
+                            <span class="mobile-menu__item-text">
+                                Плиевский склад
+                            </span>
+                            <span class="mobile-menu__item-icon"></span>
+                        </a>
+                        <div class="mobile-menu__submenu" data-parent-id="32">
+                            <div class="mobile-menu__submenu-header">
+                                <div class="mobile-menu__container">
+                                    <div class="mobile-menu__submenu-title">
+
+                                    </div>
+                                    <div class="mobile-menu__submenu__close js-close-submenu">
+                                        <img src="assets/icons/close.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-menu__container">
+                                <ul class="mobile-menu__items">
+                                    <li class="mobile-menu__item" data-id="5">
+                                        <a href="/">
+                                            <span class="mobile-menu__item-text">
+                                                Под меню 1
+                                            </span>
+                                            <span class="mobile-menu__item-icon"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mobile-menu__item has-submenu" data-id="42">
+                        <a href="/">
+                            <span class="mobile-menu__item-text">
+                                Дейли
+                            </span>
+                            <span class="mobile-menu__item-icon"></span>
+                        </a>
+                        <div class="mobile-menu__submenu" data-parent-id="42">
+                            <div class="mobile-menu__submenu-header">
+                                <div class="mobile-menu__container">
+                                    <div class="mobile-menu__submenu-title">
+
+                                    </div>
+                                    <div class="mobile-menu__submenu__close js-close-submenu">
+                                        <img src="assets/icons/close.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-menu__container">
+                                <ul class="mobile-menu__items">
+                                    <li class="mobile-menu__item" data-id="5">
+                                        <a href="/">
+                                            <span class="mobile-menu__item-text">
+                                                Под меню 1
+                                            </span>
+                                            <span class="mobile-menu__item-icon"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mobile-menu__item has-submenu" data-id="52">
+                        <a href="/">
+                            <span class="mobile-menu__item-text">
+                                Эдем
+                            </span>
+                            <span class="mobile-menu__item-icon"></span>
+                        </a>
+                        <div class="mobile-menu__submenu" data-parent-id="52">
+                            <div class="mobile-menu__submenu-header">
+                                <div class="mobile-menu__container">
+                                    <div class="mobile-menu__submenu-title">
+
+                                    </div>
+                                    <div class="mobile-menu__submenu__close js-close-submenu">
+                                        <img src="assets/icons/close.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-menu__container">
+                                <ul class="mobile-menu__items">
+                                    <li class="mobile-menu__item" data-id="5">
+                                        <a href="/">
+                                            <span class="mobile-menu__item-text">
+                                                Под меню 1
+                                            </span>
+                                            <span class="mobile-menu__item-icon"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <hr>
+                <ul class="mobile-menu__items">
+                    <li class="mobile-menu__item has-submenu" data-id="10">
+                        <a href="/">
+                            <span class="mobile-menu__item-text">
+                                Помощь покупателям
+                            </span>
+                            <span class="mobile-menu__item-icon"></span>
+                        </a>
+                        <div class="mobile-menu__submenu" data-parent-id="10">
+                            <div class="mobile-menu__submenu-header">
+                                <div class="mobile-menu__container">
+                                    <div class="mobile-menu__submenu-title">
+                                    </div>
+                                    <div class="mobile-menu__submenu__close js-close-submenu">
+                                        <img src="assets/icons/close.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-menu__container">
+                                <ul class="mobile-menu__items">
+                                    <li class="mobile-menu__item" data-id="11">
+                                        <a href="/">
+                                            <span class="mobile-menu__item-text">
+                                                Как купить?
+                                            </span>
+                                            <span class="mobile-menu__item-icon"></span>
+                                        </a>
+                                    </li>
+                                    <li class="mobile-menu__item" data-id="12">
+                                        <a href="/">
+                                            <span class="mobile-menu__item-text">
+                                                Доставка
+                                            </span>
+                                            <span class="mobile-menu__item-icon"></span>
+                                        </a>
+                                    </li>
+                                    <li class="mobile-menu__item" data-id="13">
+                                        <a href="/">
+                                            <span class="mobile-menu__item-text">
+                                                О нас
+                                            </span>
+                                            <span class="mobile-menu__item-icon"></span>
+                                        </a>
+                                    </li>
+                                    <li class="mobile-menu__item" data-id="14">
+                                        <a href="/">
+                                            <span class="mobile-menu__item-text">
+                                                Контакты
+                                            </span>
+                                            <span class="mobile-menu__item-icon"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile-menu__footer">
+            <div class="mobile-menu__container">
+                <a href="/" class="button button--block button--success mobile-menu__button">
+                    <img src="assets/icons/phone_white_icon.svg">
+                    <span>+7 928 090-60-86</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <header class="header">
+
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__top-bar">
+                    <div class="header__nav">
+                        <div class="nav">
+                            <div class="nav__items">
+                                <a class="nav__item">Главная</a>
+                                <a class="nav__item">Как купить</a>
+                                <a class="nav__item">Доставка</a>
+                                <a class="nav__item">О нас</a>
+                                <a class="nav__item">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__contacts">
+                        <div class="contacts">
+                            <a class="contacts__phone contacts__phone--with-icon">
+                                <span class="contacts__phone-icon"><img src="assets/icons/phone_icon.svg"></span>
+                                <span class="contacts__phone-text">+7 928 090 60 86</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__main">
+                    <div class="header__main-left">
+                        <div class="header__main-toggle-menu">
+                            <button class="toggle-menu js-toggle-menu">
+                                <img src="assets/icons/bar_mobile.svg" class="shops-button__icon">
+                            </button>
+                        </div>
+                        <a href="/" class="header__main-logo">
+                            <img src="assets/images/logo.png" alt="vaimarket.com" class="logo">
+                        </a>
+                        <div class="header__main-shops">
+                            <button class="shops-button">
+                                <img src="assets/icons/bar_icon.svg" class="shops-button__icon">
+                                <span class="shops-button__text">Выберите магазин</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header__main-center" id="mobile-search">
+                        <div class="header__main-search">
+                            <div class="search">
+                                <input type="text" placeholder="Искать товары" class="search__input">
+                                <button class="search__clear-button hide">
+                                    <img src="assets/icons/close.svg">
+                                </button>
+                                <button class="search__button">
+                                    <img src="assets/icons/search_icon.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__main-right">
+                        <div class="header__main-controls">
+                            <a class="search-button js-open-search">
+                                <img src="assets/icons/search_light_icon.svg">
+                            </a>
+                            <a href="/" class="basket-button">
+                                <img src="assets/icons/basket_icon.svg">
+                            </a>
+                            <a href="/" class="account-button">
+                                <img src="assets/icons/user_icon.svg">
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main class="main">
+        <section class="page-info">
+            <div class="container">
+                <div class="page-info__navigation">
+                    <a class="page-info__navigation-back-link">
+                        Назад
+                    </a>
+                </div>
+                <h1 class="page-info__title">Магазины</h1>
+                <div class="page-info__breadcrumbs">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__items">
+                            <li class="breadcrumbs__item"><a href="">Главная</a></li>
+                            <li class="breadcrumbs__item"><a href="">Магазины</a></li>
+                            <li class="breadcrumbs__item"><a href="">Гипермаркет</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="content-with-sidebar">
+                <div class="sidebar">
+                    <div class="menu-catalog">
+                        <div class="menu-catalog__header">
+                            <img src="assets/icons/bar_black_icon.svg" class="menu-catalog__header-icon">
+                            <div class="menu-catalog__header-title">
+                                Каталог <span clss="js-shop-name">Гипермаркет</span>
+                            </div>
+                        </div>
+                        <div class="menu-catalog__content">
+                            <ul class="menu-catalog__items">
+                                <li class="menu-catalog__item selected">
+                                    <a href="">
+                                        <img src="assets/icons/category/chemistry.svg" class="menu-catalog__item-icon">
+                                        <span class="menu-catalog__item-text">
+                                            Бытовая химия
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="">
+                                        <img src="assets/icons/category/chemistry.svg" class="menu-catalog__item-icon">
+                                        <span class="menu-catalog__item-text">
+                                            Бытовая химия
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="">
+                                        <img src="assets/icons/category/chemistry.svg" class="menu-catalog__item-icon">
+                                        <span class="menu-catalog__item-text">
+                                            Бытовая химия
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="">
+                                        <img src="assets/icons/category/chemistry.svg" class="menu-catalog__item-icon">
+                                        <span class="menu-catalog__item-text">
+                                            Бытовая химия
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="">
+                                        <img src="assets/icons/category/chemistry.svg" class="menu-catalog__item-icon">
+                                        <span class="menu-catalog__item-text">
+                                            Бытовая химия
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="">
+                                        <img src="assets/icons/category/chemistry.svg" class="menu-catalog__item-icon">
+                                        <span class="menu-catalog__item-text">
+                                            Бытовая химия
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="">
+                                        <img src="assets/icons/category/chemistry.svg" class="menu-catalog__item-icon">
+                                        <span class="menu-catalog__item-text">
+                                            Бытовая химия
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__item">
+                                    <a href="">
+                                        <img src="assets/icons/category/chemistry.svg" class="menu-catalog__item-icon">
+                                        <span class="menu-catalog__item-text">
+                                            Бытовая химия
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+<!--                    <div class="manager-card">-->
+<!--                        <div class="manager-card__image">-->
+<!--                            <img src="assets/images/blocks/manager-card/manager.png" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="manager-card__text">Ваш менеджер</div>-->
+<!--                        <div class="manager-card__name">Фатима</div>-->
+<!--                        <a class="manager-card__phone">+79280906086</a>-->
+<!--                        <hr>-->
+<!--                        <a class="manager-card__link">Задать вопрос</a>-->
+<!--                    </div>-->
+                </div>
+                <div class="content">
+                    <section class="cards-category">
+                        <div class="cards-category__items">
+                            <a class="cards-category__item">
+                                <div class="cards-category__item-image">
+                                    <img src="assets/images/cards_category/category.png">
+                                </div>
+                                <div class="cards-category__item-title">
+                                    Молочные продукты
+                                </div>
+                            </a>
+                            <a class="cards-category__item">
+                                <div class="cards-category__item-image">
+                                    <img src="assets/images/cards_category/category.png">
+                                </div>
+                                <div class="cards-category__item-title">
+                                    Молочные продукты
+                                </div>
+                            </a>
+                            <a class="cards-category__item">
+                                <div class="cards-category__item-image">
+                                    <img src="assets/images/cards_category/category.png">
+                                </div>
+                                <div class="cards-category__item-title">
+                                    Молочные продукты
+                                </div>
+                            </a>
+                            <a class="cards-category__item">
+                                <div class="cards-category__item-image">
+                                    <img src="assets/images/cards_category/category.png">
+                                </div>
+                                <div class="cards-category__item-title">
+                                    Молочные продукты
+                                </div>
+                            </a>
+                            <a class="cards-category__item">
+                                <div class="cards-category__item-image">
+                                    <img src="assets/images/cards_category/category.png">
+                                </div>
+                                <div class="cards-category__item-title">
+                                    Молочные продукты
+                                </div>
+                            </a>
+                            <a class="cards-category__item">
+                                <div class="cards-category__item-image">
+                                    <img src="assets/images/cards_category/category.png">
+                                </div>
+                                <div class="cards-category__item-title">
+                                    Молочные продукты
+                                </div>
+                            </a>
+                            <a class="cards-category__item">
+                                <div class="cards-category__item-image">
+                                    <img src="assets/images/cards_category/category.png">
+                                </div>
+                                <div class="cards-category__item-title">
+                                    Молочные продукты
+                                </div>
+                            </a>
+                            <a class="cards-category__item">
+                                <div class="cards-category__item-image">
+                                    <img src="assets/images/cards_category/category.png">
+                                </div>
+                                <div class="cards-category__item-title">
+                                    Молочные продукты
+                                </div>
+                            </a>
+                            <a class="cards-category__item">
+                                <div class="cards-category__item-image">
+                                    <img src="assets/images/cards_category/category.png">
+                                </div>
+                                <div class="cards-category__item-title">
+                                    Молочные продукты
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <section class="products-slider-section">
+            <div class="container">
+                <div class="products-slider-section__title">Хиты продаж</div>
+                <div class="products-slider-section__content">
+                    <div class="product-slider ">
+                        <div class="product-slider__items js-product-slider">
+                            <div class="product-slider__item">
+                                <div class="product-slider__item-mark product-slider__item-mark--red">
+                                    -30%
+                                </div>
+                                <div class="product-slider__item-image">
+                                    <img src="assets/images/blocks/product-slider/image.png">
+                                </div>
+                                <div class="product-slider__item-price">
+                                    <div class="price">
+                                        <div class="price__current">
+                                            <span class="price__current-value">350</span>
+                                            <span class="price__current-unit">₽/кг</span>
+                                        </div>
+                                        <div class="price__old">
+                                            <span class="price__old-value">500</span>
+                                            <span class="price__old-unit">₽/кг</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-slider__item-title">
+                                    Детская каша НАН
+                                </div>
+                                <div class="product-slider__item-amount product-slider__item-amount--yellow">Мало</div>
+                                <div class="product-slider__item-controls">
+                                    <button class="button button--primary button--block">В корзину</button>
+                                </div>
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-slider__item-mark product-slider__item-mark--green">
+                                    Хит!
+                                </div>
+                                <div class="product-slider__item-image">
+                                    <img src="assets/images/blocks/product-slider/image.png">
+                                </div>
+                                <div class="product-slider__item-price">
+                                    <div class="price">
+                                        <div class="price__current">
+                                            <span class="price__current-value">350</span>
+                                            <span class="price__current-unit">₽/кг</span>
+                                        </div>
+                                        <div class="price__old">
+                                            <span class="price__old-value">500</span>
+                                            <span class="price__old-unit">₽/кг</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-slider__item-title">
+                                    Детская каша НАН
+                                </div>
+                                <div class="product-slider__item-amount product-slider__item-amount--red">Нет на
+                                    складе
+                                </div>
+                                <div class="product-slider__item-controls">
+                                    <button class="button button--primary button--block">В корзину</button>
+                                </div>
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-slider__item-mark product-slider__item-mark--green ">
+                                    Хит!
+                                </div>
+                                <div class="product-slider__item-image">
+                                    <img src="assets/images/blocks/product-slider/image.png">
+                                </div>
+                                <div class="product-slider__item-price">
+                                    <div class="price">
+                                        <div class="price__current">
+                                            <span class="price__current-value">350</span>
+                                            <span class="price__current-unit">₽/кг</span>
+                                        </div>
+                                        <div class="price__old">
+                                            <span class="price__old-value">500</span>
+                                            <span class="price__old-unit">₽/кг</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-slider__item-title">
+                                    Детская каша НАН
+                                </div>
+                                <div class="product-slider__item-amount product-slider__item-amount--green">Много</div>
+                                <div class="product-slider__item-controls">
+                                    <button class="button button--primary button--block">В корзину</button>
+                                </div>
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-slider__item-mark product-slider__item-mark--green ">
+                                    Хит!
+                                </div>
+                                <div class="product-slider__item-image">
+                                    <img src="assets/images/blocks/product-slider/image.png">
+                                </div>
+                                <div class="product-slider__item-price">
+                                    <div class="price">
+                                        <div class="price__current">
+                                            <span class="price__current-value">350</span>
+                                            <span class="price__current-unit">₽/кг</span>
+                                        </div>
+                                        <div class="price__old">
+                                            <span class="price__old-value">500</span>
+                                            <span class="price__old-unit">₽/кг</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-slider__item-title">
+                                    Детская каша НАН
+                                </div>
+                                <div class="product-slider__item-amount product-slider__item-amount--yellow">Мало</div>
+                                <div class="product-slider__item-controls">
+                                    <button class="button button--primary button--block">В корзину</button>
+                                </div>
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-slider__item-mark product-slider__item-mark--green ">
+                                    Хит!
+                                </div>
+                                <div class="product-slider__item-image">
+                                    <img src="assets/images/blocks/product-slider/image.png">
+                                </div>
+                                <div class="product-slider__item-price">
+                                    <div class="price">
+                                        <div class="price__current">
+                                            <span class="price__current-value">350</span>
+                                            <span class="price__current-unit">₽/кг</span>
+                                        </div>
+                                        <div class="price__old">
+                                            <span class="price__old-value">500</span>
+                                            <span class="price__old-unit">₽/кг</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-slider__item-title">
+                                    Детская каша НАН
+                                </div>
+                                <div class="product-slider__item-amount product-slider__item-amount--yellow">Мало</div>
+                                <div class="product-slider__item-controls">
+                                    <button class="button button--primary button--block">В корзину</button>
+                                </div>
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-slider__item-mark product-slider__item-mark--green ">
+                                    Хит!
+                                </div>
+                                <div class="product-slider__item-image">
+                                    <img src="assets/images/blocks/product-slider/image.png">
+                                </div>
+                                <div class="product-slider__item-price">
+                                    <div class="price">
+                                        <div class="price__current">
+                                            <span class="price__current-value">350</span>
+                                            <span class="price__current-unit">₽/кг</span>
+                                        </div>
+                                        <div class="price__old">
+                                            <span class="price__old-value">500</span>
+                                            <span class="price__old-unit">₽/кг</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-slider__item-title">
+                                    Детская каша НАН
+                                </div>
+                                <div class="product-slider__item-amount product-slider__item-amount--yellow">Мало</div>
+                                <div class="product-slider__item-controls">
+                                    <button class="button button--primary button--block">В корзину</button>
+                                </div>
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-slider__item-mark product-slider__item-mark--green ">
+                                    Хит!
+                                </div>
+                                <div class="product-slider__item-image">
+                                    <img src="assets/images/blocks/product-slider/image.png">
+                                </div>
+                                <div class="product-slider__item-price">
+                                    <div class="price">
+                                        <div class="price__current">
+                                            <span class="price__current-value">350</span>
+                                            <span class="price__current-unit">₽/кг</span>
+                                        </div>
+                                        <div class="price__old">
+                                            <span class="price__old-value">500</span>
+                                            <span class="price__old-unit">₽/кг</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-slider__item-title">
+                                    Детская каша НАН
+                                </div>
+                                <div class="product-slider__item-amount product-slider__item-amount--yellow">Мало</div>
+                                <div class="product-slider__item-controls">
+                                    <button class="button button--primary button--block">В корзину</button>
+                                </div>
+                            </div>
+                            <div class="product-slider__item">
+                                <div class="product-slider__item-mark product-slider__item-mark--green ">
+                                    Хит!
+                                </div>
+                                <div class="product-slider__item-image">
+                                    <img src="assets/images/blocks/product-slider/image.png">
+                                </div>
+                                <div class="product-slider__item-price">
+                                    <div class="price">
+                                        <div class="price__current">
+                                            <span class="price__current-value">350</span>
+                                            <span class="price__current-unit">₽/кг</span>
+                                        </div>
+                                        <div class="price__old">
+                                            <span class="price__old-value">500</span>
+                                            <span class="price__old-unit">₽/кг</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-slider__item-title">
+                                    Детская каша НАН
+                                </div>
+                                <div class="product-slider__item-amount product-slider__item-amount--yellow">Мало</div>
+                                <div class="product-slider__item-controls">
+                                    <button class="button button--primary button--block">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-slider__controls">
+                            <button class="button button--default button--block js-show-more-products">
+                                <span>Показать ещё</span>
+                                <span class="button__icon button__icon--right"><img src="assets/icons/arrow.svg"</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__top-bar">
+                    <a href="/" class="footer__logo">
+                        <img src="assets/images/logo.png" class="logo">
+                    </a>
+                    <div class="footer__app-links">
+                        <div class="app-links">
+                            <div class="app-links__items">
+                                <a href="" class="app-links__item">
+                                    <img src="assets/images/gplay.png">
+                                </a>
+                                <a href="" class="app-links__item">
+                                    <img src="assets/images/appstore.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__main">
+                    <div class="footer__main-left">
+                        <div class="footer-menu">
+                            <ul class="footer-menu__items footer-menu__items--mobile">
+                                <li>
+                                    <a class="footer-menu__item">Как купить</a>
+                                </li>
+                                <li>
+                                    <a class="footer-menu__item">Доставка</a>
+                                </li>
+                                <li>
+                                    <a class="footer-menu__item">Контакты</a>
+                                </li>
+                                <li>
+                                    <a class="footer-menu__item">О нас</a>
+                                </li>
+                            </ul>
+                            <ul class="footer-menu__items">
+                                <li>
+                                    <a class="footer-menu__item">Как купить</a>
+                                </li>
+                                <li>
+                                    <a class="footer-menu__item">Доставка</a>
+                                </li>
+                                <li>
+                                    <a class="footer-menu__item">Акции</a>
+                                </li>
+                            </ul>
+                            <ul class="footer-menu__items hidden-mobile">
+                                <li>
+                                    <a class="footer-menu__item">Контакты</a>
+                                </li>
+                                <li>
+                                    <a class="footer-menu__item">О нас</a>
+                                </li>
+                                <li>
+                                    <a class="footer-menu__item">Партнерам</a>
+                                </li>
+                            </ul>
+                            <ul class="footer-menu__items hidden-mobile">
+                                <li>
+                                    <a class="footer-menu__item">Вопросы и ответы</a>
+                                </li>
+                                <li>
+                                    <a class="footer-menu__item">Вакансии</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-copyright">
+                            2022 vaimarket - Правила использования
+                        </div>
+                    </div>
+                    <div class="footer__main-right">
+                        <div class="footer-contacts">
+                            <div class="footer-contacts__phone">
+                                <img src="assets/icons/phone_icon.svg" alt="" class="footer-contacts__icon">
+                                +79280906086
+                            </div>
+                            <div class="footer-contacts__email">
+                                <img src="assets/icons/emai_icon.svg" alt="" class="footer-contacts__icon">
+                                vaimarket.com@gmail.com
+                            </div>
+                        </div>
+                        <div class="footer-subscribe">
+                            <a href="/" class="footer-subscribe__button">
+                                <span class="footer-subscribe__button-icon"><img src="assets/icons/tg_light.svg"></span>
+                                <span class="footer-subscribe__button-text">Подписаться на рассылку</span>
+                            </a>
+                        </div>
+                        <div class="footer-social">
+                            <div class="social">
+                                <div class="social__items">
+                                    <a href="/" class="social__item">
+                                        <img src="assets/icons/instagram'.svg">
+                                    </a>
+                                    <a href="/" class="social__item">
+                                        <img src="assets/icons/tg.svg">
+                                    </a>
+                                    <a href="/" class="social__item">
+                                        <img src="assets/icons/vk.svg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
