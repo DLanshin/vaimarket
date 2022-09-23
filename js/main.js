@@ -257,7 +257,6 @@ function initMultipleSelect(){
 
 function initConsultationButton(){
     $(document).on("click", ".js-open-consultation-message", function(){
-        console.log("open")
         $(this).closest(".consultation").find(".consultation__card-box").toggleClass("open");
     })
 }

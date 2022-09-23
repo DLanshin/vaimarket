@@ -17,7 +17,7 @@
     width: 396px;
     display: none;
     opacity: 0;
-    transition: all 0.5s ease-in;
+    transition: opacity 0.5s ease-in;
     &.open{
       display: flex;
       opacity: 1;
