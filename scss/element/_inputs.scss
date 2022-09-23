@@ -1,0 +1,48 @@
+.input{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #43454A;
+  max-width: 100%;
+  border: 1px solid #DADFE7;
+  border-radius: 9px;
+  padding: 10px;
+}
+.price-input{
+  position: relative;
+  .input{
+    text-align: center;
+  }
+
+  &:before{
+    color: #DADFE7;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    left: 12px;
+  }
+
+  &:after{
+    content: "₽";
+    color: #DADFE7;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    right: 8px;
+    top: 10px;
+  }
+
+  &__from{
+    &:before{
+      content: "от";
+    }
+  }
+  &__to{
+    &:before{
+      content: "до";
+    }
+  }
+}

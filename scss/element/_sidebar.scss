@@ -14,6 +14,6 @@
 .content-with-sidebar .content{
   width: 100%;
   @include md{
-    width: calc(100% - 280 - 50px);
+    width: calc(100% - 280px - 50px);
   }
 }

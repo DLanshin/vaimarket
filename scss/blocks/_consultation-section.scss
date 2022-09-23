@@ -1,0 +1,6 @@
+.consultation-section{
+  display: flex;
+  &--right{
+    justify-content: flex-end;
+  }
+}

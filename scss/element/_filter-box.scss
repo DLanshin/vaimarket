@@ -1,0 +1,14 @@
+.filter-box{
+  display: flex;
+  flex-direction: column;
+  &__title{
+    margin-bottom: 27px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #43454A;
+  }
+  &__content{}
+}

@@ -1,0 +1,18 @@
+.price-slider {
+
+  &__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -9px;
+  }
+
+  &__col-2 {
+    width: calc(50% - 9px);
+    margin: 0 9px;
+  }
+  &__range{
+    padding: 15px 0;
+    margin-bottom: 20px;
+  }
+}
